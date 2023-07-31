@@ -1,0 +1,1 @@
+moor pointers and arrays
