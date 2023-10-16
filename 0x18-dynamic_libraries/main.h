@@ -1,25 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-extern int _putchar(char c);
-extern int _islower(int c);
-extern int _isalpha(int c);
-extern int _abs(int n);
-extern int _isupper(int c);
-extern int _isdigit(int c);
-extern int _strlen(char *s);
-extern void _puts(char *s);
-extern char *_strcpy(char *dest, char *src);
-extern int _atoi(char *s);
-extern char *_strcat(char *dest, char *src);
-extern char *_strncat(char *dest, char *src, int n);
-extern char *_strncpy(char *dest, char *src, int n);
-extern int _strcmp(char *s1, char *s2);
-extern char *_memset(char *s, char b, unsigned int n);
-extern char *_memcpy(char *dest, char *src, unsigned int n);
-extern char *_strchr(char *s, char c);
-extern unsigned int _strspn(char *s, char *accept);
-extern char *_strpbrk(char *s, char *accept);
-extern char *_strstr(char *haystack, char *needle);
+#include <stdlib.h>
 
-#endif /* MAIN_H */
+int _putchar(char c);
+void _puts(char *str);
+void *malloc_checked(unsigned int b);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+int _atoi(const char *s);
+void print_int(unsigned long int n);
+
+#endif
